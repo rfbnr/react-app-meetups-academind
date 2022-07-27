@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import NewMeetupForm from "../components/meetups/NewMeetupForm";
 
-function NewMeetup() {
+function NewMeetupPage() {
     const navigate = useNavigate();
 
     function addMeetupHandler(newMeetupData) {
@@ -17,7 +17,7 @@ function NewMeetup() {
         ).then(() => {
             navigate("/");
         });
-    }
+    };
 
     return (
         <section>
@@ -27,4 +27,4 @@ function NewMeetup() {
     )
 }
 
-export default NewMeetup;
+export default NewMeetupPage;
