@@ -6,12 +6,15 @@
   justify-content: space-between;
   background-color: #77002e;
   padding: 0 10%;
+  position: fixed;
+  top: 0;
 }
 
 .logo {
   font-size: 2rem;
   color: white;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .header ul {
