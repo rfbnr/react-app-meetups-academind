@@ -30,34 +30,43 @@ function NewMeetupForm(props) {
         <Card>
             <form className={classes.form} onSubmit={submitHandler}>
                 <div className={classes.control}>
-                    <label htmlFor="title">Title</label>
+                    <label htmlFor="title">Meetup Title</label>
                     <input
                         type="text"
                         id="title"
-                        required
                         ref={titleInputRef}
+                        placeholder="Add Meetup Title"
+                        required
                     />
                 </div>
                 <div className={classes.control}>
-                    <label htmlFor="image">Image</label>
-                    <input type="url" id="imgae" required ref={imageInputRef} />
+                    <label htmlFor="image">Meetup Image</label>
+                    <input
+                        type="url"
+                        id="imgae"
+                        ref={imageInputRef}
+                        placeholder="Add Meetup Image with URL"
+                        required
+                    />
                 </div>
                 <div className={classes.control}>
-                    <label htmlFor="address">Address</label>
+                    <label htmlFor="address">Meetup Address</label>
                     <input
                         type="text"
                         id="address"
-                        required
                         ref={addressInputRef}
+                        placeholder="Add Meetup Address"
+                        required
                     />
                 </div>
                 <div className={classes.control}>
-                    <label htmlFor="description">Description</label>
+                    <label htmlFor="description">Meetup Description</label>
                     <textarea
                         rows="5"
                         id="description"
-                        required
                         ref={descriptionInputRef}
+                        placeholder="Add Meetup Description"
+                        required
                     ></textarea>
                 </div>
                 <div className={classes.actions}>
